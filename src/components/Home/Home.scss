@@ -1,0 +1,87 @@
+.home-page{
+    .text-zone{
+        position: absolute;
+        left:10%;
+        top:50%;
+        transform: translateY(-50%);
+        width:40%;
+        max-height:90%;
+        
+
+
+    }
+        h1{
+            color:#fff;
+            font-size: 53px;
+            font-family: 'coolvetica';
+            font-weight: 400;
+            margin: 0;
+
+            &::before{
+                content: "<h1>";
+                font-family: 'La Belle Aurore';
+                color: #ffd700;
+                position: absolute;
+                margin-top: -40px;
+                font-size: 18px;
+                left: 15px;
+                opacity: 0.6;
+            }
+
+            
+
+            &::after{
+                content: "</h1>";
+                position: absolute;
+                font-size: 18px;
+                font-family: 'La Belle Aurore';
+                color:#ffd700;
+                margin-top:18px;
+                margin-left:20px;
+                animation: fadeIn 1s 1.7s backwards ;
+                opacity: 0.6;
+                // left: 15px;
+            }
+
+            img{
+                margin-left:20px;
+                opacity:0;
+                width:32px;
+                height: auto;
+                animation: rotateIn 1s 1.4s linear both;
+
+            }
+
+        }
+        h2{
+            color:#8d8d8d;
+            letter-spacing: 3px;
+            font-weight: 400;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin-top: 20px;
+            animation: fadeIn 1s 1.8s backwards;
+
+        }
+
+        .flat-button{
+            text-decoration: none;
+            color: #ffd700;
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: 400;
+            padding: 10px 18px;
+            margin-top: 25px;
+            border: 1px solid #ffd700;
+            animation: fadeIn 1s 1.8s backwards;
+            float: left;
+            letter-spacing: 4px;
+            white-space: nowrap;
+
+            &:hover{
+                background-color:#ffd700 ;
+                color:#333;
+            }
+        }
+    
+}
